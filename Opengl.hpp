@@ -14,7 +14,9 @@ class Opengl {
 public:
 	Opengl();
 	Opengl(int iWidth, int iHeight);
-	render();
+	void render();
+	void setDraw(void (*ptrDraw)(void));
+
  	~Opengl();
    
     
