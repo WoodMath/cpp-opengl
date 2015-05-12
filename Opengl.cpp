@@ -31,7 +31,7 @@ Opengl::Opengl(int iWidth, int iHeight){
 
 void Opengl::render(){
 
-	
+	glutMainLoop();	
 }
 
 void Opengl::setDraw(void (*ptrDraw)(void)){
@@ -40,11 +40,17 @@ void Opengl::setDraw(void (*ptrDraw)(void)){
 
 Opengl::~Opengl(){}
 
-void Opengl::init(){}
 void Opengl::display(){}
 void Opengl::timer(int n){}
 void Opengl::mouse(int button, int state, int x, int y){}
 void Opengl::motion(int x, int y){}
-void Opengl::keyboard(unsigned char key, int x, int y){}
+
+void Opengl::keyboard(unsigned char key, int x, int y){
+
+	if(key == 27)
+		exit(0);
+
+}
+
 void Opengl::reshape(int w, int h){}
 

@@ -21,7 +21,6 @@ public:
    
     
 private:
-	void init();
 	void display();
 	void timer(int n);
 	void mouse(int button, int state, int x, int y);
