@@ -23,7 +23,7 @@ g++ -c Opengl.cpp -Wno-deprecated
 #gcc -c helper.c
 #gcc permutations.o helper.o -o helper.out
 #gcc image_DXT.o image_helper.o stb_image_aug.o SOIL.o permutations.o bezier.o shapes.o drawing.o rubik.o -o rubik.out -lm -lGLU -lglut
-g++ $CODE.o Opengl.cpp -o $CODE -lm -framework OpenGL -framework GLUT -framework CoreFoundation -Wno-deprecated
+g++ Opengl.o $CODE.o -o $CODE -lm -framework OpenGL -framework GLUT -framework CoreFoundation -Wno-deprecated
 
 #gcc rubik.o shapes.o bezier.o -o rubik.out -lGL -lglut -lGLEW
 
